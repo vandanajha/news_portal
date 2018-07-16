@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="administrator_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   <link rel="Stylesheet" href="css/admin-style.css" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+   <div id="container">
+
+     <div id="header">
+         <div id="left-header">
+            <a href="index.aspx"><img alt="Home" src="../images/home.gif" border="0" height="30px" title="Home"/></a>
+         </div>
+         <div id="right-header">  
+             
+            <asp:LoginView ID="logview" runat="server">
+             <LoggedInTemplate>
+                 <ul class="topmenu">
+                    <li>
+                          <a href="#"><img src="../images/user.gif" align="left" style="margin:-5px 0;" hspace="15px"/>  Welcome , <asp:LoginName ID="logname" runat="server" /></a>
+                        <ul>
+                            <li><a href="#">Account</a></li>
+                            <li><asp:LinkButton ID="btnlogout" runat="server" Text="Sign Out" onclick="btnlogout_Click"></asp:LinkButton></li>
+                        </ul>
+                        
+                    </li>
+
+                 </ul>
+                 </LoggedInTemplate>
+             </asp:LoginView>
+               
+         </div>
+     </div>
+
+     
+
+     <div id="content">
+       <div id="left-content">
+          <ul class="leftnav">
+             <li>
+                Account
+                <ul>
+                   <li><a href="list-of-subscribers.aspx">All Users</a></li>
+                   <li><a href="#">Update Password</a></li>
+                </ul>
+            </li>
+           
+            <li>
+                Articles
+                <ul>
+                  <li><a href="article-category.aspx">Article Category</a></li>
+                   <li><a href="add-a-article.aspx">New Article</a></li>
+                   <li><a href="list-of-articles.aspx">All Articles</a></li>
+                </ul>
+            </li>
+            <li>
+                Photo Gallery
+                <ul>
+                    <li><a href="photo-gallary.aspx">New Photo</a></li>
+                   <li><a href="photo-gallary.aspx">All Photos</a></li>
+                </ul>
+            </li>
+            <li>
+                Video Gallery
+                <ul>
+                    <li><a href="video-gallary.aspx">New Video</a></li>
+                   <li><a href="video-gallary.aspx">All Videos</a></li>
+                </ul>
+            </li>
+           <li>
+                Advertisement Gallery
+                <ul>
+                    <li><a href="ad-gallary.aspx">New Advertisement</a></li>
+                   <li><a href="ad-gallary.aspx">All Advertisements</a></li>
+                </ul>
+            </li>
+            <li>
+                Blogs
+                <ul>
+                   <li><a href="#">New Blog Category</a></li>
+                   <li><a href="#">New Blog</a></li>
+                   <li><a href="#">All Blogs</a></li>
+                </ul>
+            </li>
+  
+         </ul>
+       </div>
+
+        <div id="right-content">
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+           </asp:ContentPlaceHolder>
+       </div>
+        
+
+     </div>
+
+      <div id="footer">
+      &copy; All Right Reserved @unitednewsnetwork.in
+      </div>
+
+    </div>
+    </form>
+</body>
+</html>

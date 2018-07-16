@@ -1,0 +1,169 @@
+﻿body
+{
+    margin:0;
+    padding:0;
+    border-width:0;
+    background:#EAEAEA;
+    font-family:Trebuchet MS,Verdana;
+}
+#container
+{
+    width:1024px;
+    margin:0px auto;
+    clear:both;
+    border:1px solid #d1d1d1;
+    background:#fff;
+   
+}
+
+
+#container #header
+{
+    width:100%;
+    height:150px;
+    clear:both;
+    border:1px solid #d1d1d1;
+}
+
+#container #menu
+{
+    width:100%;
+    height:30px;
+    margin-top:5px;    
+    clear:both;
+    border:1px solid #d1d1d1;
+}
+
+#container #content
+{
+    width:100%;
+    margin-top:5px;
+  
+    clear:both;
+    border:0px solid #d1d1d1;
+}
+
+#container #content #top-content
+{
+    width:100%;
+   
+  
+    clear:both;
+    border:0px solid #d1d1d1;
+}
+
+#container #content #top-content #left-top-content
+{
+    width:70%;
+   float:left;
+  
+   
+    border:1px solid #d1d1d1;
+}
+
+#container #content #top-content #right-top-content
+{
+    width:29%;
+   float:right;
+  
+   
+    border:1px solid #d1d1d1;
+}
+#container #content #bottom-content
+{
+    width:100%;
+   
+   margin-top:5px;
+    clear:both;
+    border:1px solid #d1d1d1;
+}
+
+
+#container #footer
+{
+    width:100%;
+    height:40px;
+     margin-top:5px;
+    clear:both;
+    border:1px solid #d1d1d1;
+     background-color:#D81E27;
+     text-align:center;
+     color:#f2f2f2;
+     font-size:12px;
+     line-height:40px;
+}
+
+
+
+.box
+{
+    width:100%;
+    height:auto;
+    padding:2px;
+    clear:both;
+    border:0px solid #D81E27;
+}
+
+.title
+{
+   padding:4px;
+   text-align:center;
+   background-color:#D81E27;
+   color:#f2f2f2;
+   line-height:2;
+   font-weight:bold;
+   font-family:Georgia,"Times New Roman",Times,serif;
+}
+
+ul.list
+{
+    margin:0;
+    padding:0;
+    border-width:0;
+    list-style:none;
+    width:100%;
+     float:left;
+}
+
+ul.list li
+{
+    margin:0 0 5px 0;
+    padding:2px;
+    height:auto;
+    width:100%;
+    float:left;
+    text-align:justify;
+    border-bottom:1px dotted #d1d1d1
+}
+
+ul.list li img
+{
+    margin:5px;
+   
+}
+ul.list li h2
+{
+    font-size:14px;
+    font-family:Times New Roman,Verdana;
+    text-align:justify;
+    margin:5px;
+}
+
+ul.list li h2 a
+{
+    text-decoration:none;
+    color:#115584;
+}
+ul.list li a
+{
+    color:#E90000;
+    text-decoration:none;
+}
+
+ul.list li a:hover
+{
+    
+    text-decoration:underline;
+}
+
+
